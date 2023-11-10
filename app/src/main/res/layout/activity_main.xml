@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:gravity="center">
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edificio"
+            android:id="@+id/edifici"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comida"
+            android:id="@+id/restaurant" />
+    </TableRow>
+    <TableRow
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camara"
+            android:id="@+id/peliculas" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sol"
+            android:id="@+id/temperatura" />
+    </TableRow>
+    <TableRow
+        android:gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hotel"
+            android:id="@+id/hotel" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/libro"
+            android:id="@+id/llibre" />
+    </TableRow>
+</TableLayout>

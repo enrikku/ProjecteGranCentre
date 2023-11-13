@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.gran_centre"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.gran_centre"

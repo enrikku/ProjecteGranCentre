@@ -2,6 +2,7 @@ package com.example.gran_centre;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.ImageWriter;
 import android.os.Bundle;
 import android.view.View;
@@ -40,20 +41,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == R.id.edifici){
             Toast.makeText(this, "Edifici", Toast.LENGTH_SHORT).show();
-        }else if (view.getId() == R.id.restaurant){
+
+            Intent intent = new Intent(this, edifici.class);
+            startActivity(intent);
+        }
+        else if (view.getId() == R.id.restaurant){
             Toast.makeText(this, "Restaurant", Toast.LENGTH_SHORT).show();
-        }else if (view.getId() == R.id.peliculas){
+        }
+        else if (view.getId() == R.id.peliculas){
             Toast.makeText(this, "Peliculas", Toast.LENGTH_SHORT).show();
-
-        }else if (view.getId() == R.id.temperatura){
+        }
+        else if (view.getId() == R.id.temperatura){
             Toast.makeText(this, "Temperatura", Toast.LENGTH_SHORT).show();
-
-        }else if (view.getId() == R.id.hotel){
+        }
+        else if (view.getId() == R.id.hotel){
             Toast.makeText(this, "Hotel", Toast.LENGTH_SHORT).show();
-
-        }else if (view.getId() == R.id.llibre){
+        }
+        else if (view.getId() == R.id.llibre){
             Toast.makeText(this, "Llibre", Toast.LENGTH_SHORT).show();
-
         }
     }
 }

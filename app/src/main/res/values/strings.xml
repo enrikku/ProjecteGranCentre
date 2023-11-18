@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Gran-centre</string>
     <string name="title">Granollers Guide</string>
+    <string name="course_rating">0</string>
+    <string name="course_name">Test</string>
+    <string-array name="estrella">
+        <item>5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>

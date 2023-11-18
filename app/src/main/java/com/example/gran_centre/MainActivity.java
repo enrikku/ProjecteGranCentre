@@ -3,7 +3,6 @@ package com.example.gran_centre;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.ImageWriter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -56,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if (view.getId() == R.id.hotel){
             Toast.makeText(this, "Hotel", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, HotelsActivity.class);
+            startActivity(intent);
         }
         else if (view.getId() == R.id.llibre){
             Toast.makeText(this, "Llibre", Toast.LENGTH_SHORT).show();

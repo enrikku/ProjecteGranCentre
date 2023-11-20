@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_column="1"
+    android:layout_row="9"
+    tools:context=".RestaurantesActivity">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_columnSpan="0"
+        android:layout_row="0"
+        style="@style/StyleSpinner"/>
+
+    <!-- Restaurant 1: -->
+
+    <ImageView
+        android:layout_width="225dp"
+        android:layout_height="175dp"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/shaporem" />
+
+    <TableLayout
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shaporem Gastrobar"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/StyleRatingBarStyle" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiposRes1"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phoneRes1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/webRes1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+
+            android:src="@drawable/web" />
+
+        <ImageView
+            android:id="@+id/mapsRes1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/maps"/>
+    </LinearLayout>
+</GridLayout>

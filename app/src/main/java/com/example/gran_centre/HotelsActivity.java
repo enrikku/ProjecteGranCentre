@@ -90,8 +90,6 @@ public class HotelsActivity extends AppCompatActivity
 
     private void initRecyclerView()
     {
-
-
         recyclerView = findViewById(R.id.recyclerView);
         hotelAdapter = new HotelAdapter(this, listaHoteles);
         recyclerView.setAdapter(hotelAdapter);

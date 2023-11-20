@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Gran-centre</string>
     <string name="title">Granollers Guide</string>
-    <string name="course_rating">0</string>
-    <string name="course_name">Test</string>
+    <string-array name="tiposRestaurantes">
+        <item>Mediterránea, Española</item>
+        <item>Mediterránea, Europea</item>
+    </string-array>
     <string-array name="estrella">
         <item>5</item>
         <item>2</item>

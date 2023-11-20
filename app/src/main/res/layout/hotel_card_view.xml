@@ -14,8 +14,8 @@
 
         <ImageView
             android:id="@+id/imageViewCompany"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
             android:scaleType="centerCrop"
             android:contentDescription="Logo de la Empresa"
             android:layout_centerVertical="true"

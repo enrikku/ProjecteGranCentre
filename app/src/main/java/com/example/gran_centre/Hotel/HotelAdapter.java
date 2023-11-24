@@ -1,6 +1,8 @@
 package com.example.gran_centre.Hotel;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.gran_centre.R;
 
 import java.util.ArrayList;
@@ -36,12 +40,36 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         clHotel hotel = hotels.get(position);
 
-        // Set data to views
+        Uri imageUri = Uri.parse(hotel.getPhoto());
+        Glide.with(context)
+                .load("https://raulperez.tieneblog.net/wp-content/uploads/2015/09/tux-transparente.png")
+                .error(R.drawable.ic_error_foreground)  // Error drawable
+                .into(holder.imageViewCompany);
         holder.textViewCompanyName.setText(hotel.getNom());
         holder.textViewCompanyAddress.setText(hotel.getDirecc());
         holder.textViewCompanyPhone.setText(hotel.getTel());
         holder.textViewCompanyWeb.setText(hotel.getWww());
         holder.ratingBarCompany.setRating(Float.parseFloat(hotel.getVal()));
+
+        holder.textViewCompanyPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Acción a realizar cuando se hace clic en el número de teléfono
+                String phoneNumber = hotel.getTel(); // Obtener el número de teléfono del hotel
+                Intent dialIntent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phoneNumber, null));
+                context.startActivity(dialIntent);
+            }
+        });
+
+        holder.textViewCompanyWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Acción a realizar cuando se hace clic en el sitio web
+                String pagina = "http://" + ((TextView) v).getText().toString();
+                Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse(pagina));
+                context.startActivity(intent2);
+            }
+        });
     }
 
     @Override

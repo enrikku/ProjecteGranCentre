@@ -15,7 +15,6 @@
 
     <style name="StyleRatingBarStyle">
         <item name="android:numStars">5</item>
-        <item name="android:rating">5</item>
         <item name="android:stepSize">0.5</item>
         <item name="android:scaleX">0.5</item>
         <item name="android:scaleY">0.5</item>

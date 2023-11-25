@@ -31,7 +31,7 @@
                     style="@style/imgSizeFilms"
                     android:id="@+id/film1"/>
                 <TableLayout
-                    android:layout_width="260dp"
+                    android:layout_width="255dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_column="1">
@@ -76,7 +76,7 @@
                     style="@style/imgSizeFilms"
                     android:id="@+id/film2"/>
                 <TableLayout
-                    android:layout_width="260dp"
+                    android:layout_width="255dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_column="1">
@@ -93,7 +93,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             style="@style/textOptonsFilms"
-                            android:text="Una comedia caótica que tiene lugar durante el frenesí del Black Friday."/>
+                            android:text="Una película de terror que tiene lugar después del frenesí del Black Friday."/>
                     </TableRow>
                     <TableRow>
                         <TextView
@@ -121,7 +121,7 @@
                     style="@style/imgSizeFilms"
                     android:id="@+id/film3"/>
                 <TableLayout
-                    android:layout_width="260dp"
+                    android:layout_width="255dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_column="1">
@@ -166,7 +166,7 @@
                     style="@style/imgSizeFilms"
                     android:id="@+id/film4"/>
                 <TableLayout
-                    android:layout_width="260dp"
+                    android:layout_width="255dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_column="1">
@@ -212,7 +212,7 @@
                     style="@style/imgSizeFilms"
                     android:id="@+id/film5"/>
                 <TableLayout
-                    android:layout_width="260dp"
+                    android:layout_width="255dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_column="1">
@@ -229,7 +229,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             style="@style/textOptonsFilms"
-                            android:text="Un thriller lunar lleno de misterio y acción."/>
+                            android:text="Un thriller que narra los asesinatos en serie de varios miembros de la nación indígena Osage, rica en petróleo."/>
                     </TableRow>
                     <TableRow>
                         <TextView

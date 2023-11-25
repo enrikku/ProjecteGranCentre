@@ -33,7 +33,7 @@
 
     <style name="textOptonsFilms">
         <item name="android:textAlignment">center</item>
-        <item name="android:titleMarginTop">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
     </style>
 
     <style name="imgSizeFilms">

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Gran-centre</string>
     <string name="title">Granollers Guide</string>
+    <string name="tel">Call</string>
+    <string name="location">Location</string>
     <string-array name="tiposRestaurantes">
         <item>All</item>
         <item>Mediterránea, Española</item>

@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Imagen del parking -->
+    <ImageView
+        android:id="@+id/imageViewParking"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_car_foreground"/>
+
+    <!-- Detalles del parking al lado derecho de la imagen -->
+    <TextView
+        android:id="@+id/textViewParkingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewParking"
+        android:text="Nombre del Parking"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewOccupied"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewParkingName"
+        android:layout_toRightOf="@id/imageViewParking"
+        android:text="Plazas ocupadas: 20"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOccupied"
+        android:layout_toRightOf="@id/imageViewParking"
+        android:text="Plazas disponibles: 80"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón de detalles al lado derecho de la imagen -->
+    <Button
+        android:id="@+id/buttonDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAvailable"
+        android:layout_toRightOf="@id/imageViewParking"
+        android:text="Detalles"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+</RelativeLayout>

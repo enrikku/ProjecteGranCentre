@@ -55,6 +55,7 @@ public class HotelsActivity extends AppCompatActivity
                 }else{
                     listaHoteles.clear();
                     addHotels();
+                    hotelAdapter.notifyDataSetChanged();
                 }
 
             }
@@ -90,15 +91,15 @@ public class HotelsActivity extends AppCompatActivity
 
     public void addHotels()
     {
-        listaHoteles.add(new clHotel("Hotel Gran Plaza", "Plaza Principal 123", "+34 111 222 333", "www.hotelgranplaza.com", "4", "https://as2.ftcdn.net/v2/jpg/00/09/21/15/1000_F_9211505_d4hxfNtPeTfgt7AeGmoO7u79P2hwxkoQ.jpg"));
-        listaHoteles.add(new clHotel("Gran Hotel del Valle", "Avenida del Valle 456", "+34 333 444 555", "www.granhoteldelvalle.com", "3", "https://example.com/hotel2.jpg"));
-        listaHoteles.add(new clHotel("Hotel Elegante Granollers", "Calle Elegancia 789", "+34 666 777 888", "www.hotelelegantegranollers.com", "5", "https://example.com/hotel3.jpg"));
-        listaHoteles.add(new clHotel("Gran Hotel Montaña", "Carretera de Montaña 101", "+34 999 000 111", "www.granhotelmontana.com", "4", "https://example.com/hotel4.jpg"));
-        listaHoteles.add(new clHotel("Hotel Moderno Granollers", "Calle Modernidad 202", "+34 123 987 654", "www.hotelmodernogranollers.com", "3", "https://example.com/hotel5.jpg"));
-        listaHoteles.add(new clHotel("Hotel Sereno Granollers", "Calle Serenidad 303", "+34 111 222 333", "www.hotelserenogranollers.com", "4", "https://example.com/hotel6.jpg"));
-        listaHoteles.add(new clHotel("Gran Hotel Tranquilidad", "Avenida Tranquila 456", "+34 333 444 555", "www.granhoteltranquilidad.com", "5", "https://example.com/hotel7.jpg"));
-        listaHoteles.add(new clHotel("Hotel Exclusivo Granollers", "Calle Exclusividad 789", "+34 666 777 888", "www.hotelexclusivogranollers.com", "3", "https://example.com/hotel8.jpg"));
-        listaHoteles.add(new clHotel("Gran Hotel Vista Montserrat", "Carretera Vista Montserrat 101", "+34 999 000 111", "www.hotelvistamontserrat.com", "4", "https://example.com/hotel9.jpg"));
+        listaHoteles.add(new clHotel("Hotel Gran Plaza", "Plaza Principal 123", "+34 111 222 333", "www.hotelgranplaza.com", "4", "https://s1.abcstatics.com/media/MM/2020/08/10/hoteles_espaa_lujo-U301387819834kHH--1234x900@abc.jpg"));
+        listaHoteles.add(new clHotel("Gran Hotel del Valle", "Avenida del Valle 456", "+34 333 444 555", "www.granhoteldelvalle.com", "3", "https://s1.abcstatics.com/media/MM/2020/08/05/non-set-mallorca-kA0D--1258x900@abc.jpg"));
+        listaHoteles.add(new clHotel("Hotel Elegante Granollers", "Calle Elegancia 789", "+34 666 777 888", "www.hotelelegantegranollers.com", "5", "https://static.hosteltur.com/app/public/uploads/img/articles/2023/03/24/L_105222_hotel-kaizen-don-ramon-patio-r.jpg"));
+        listaHoteles.add(new clHotel("Gran Hotel Montaña", "Carretera de Montaña 101", "+34 999 000 111", "www.granhotelmontana.com", "4", "https://imagenes.elpais.com/resizer/7IPg9OaCbcfqwO349J8pkoAaZVA=/1200x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/PZHPU56HUHMDZPWGNYLY2ZHWLM.jpg"));
+        listaHoteles.add(new clHotel("Hotel Moderno Granollers", "Calle Modernidad 202", "+34 123 987 654", "www.hotelmodernogranollers.com", "3", "https://phantom-elmundo.unidadeditorial.es/ab7462c469bca71f4efe4df26065a388/resize/600/f/webp/assets/multimedia/imagenes/2023/05/26/16850955381895.jpg"));
+        listaHoteles.add(new clHotel("Hotel Sereno Granollers", "Calle Serenidad 303", "+34 111 222 333", "www.hotelserenogranollers.com", "4", "https://phantom-elmundo.unidadeditorial.es/e86aa29689b166016bd3291e51d082e1/resize/600/f/webp/assets/multimedia/imagenes/2023/05/26/16850955678723.jpg"));
+        listaHoteles.add(new clHotel("Gran Hotel Tranquilidad", "Avenida Tranquila 456", "+34 333 444 555", "www.granhoteltranquilidad.com", "5", "https://images.ecestaticos.com/VFbzEF_rJCfFuIrApYUw88wuV5w=/0x0:2000x1333/996x747/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F5f4%2Facf%2Fc73%2F5f4acfc737a4cab206514bf0d378f6e1.jpg"));
+        listaHoteles.add(new clHotel("Hotel Exclusivo Granollers", "Calle Exclusividad 789", "+34 666 777 888", "www.hotelexclusivogranollers.com", "3", "https://static.hosteltur.com/app/public/uploads/img/articles/2023/06/11/L_214523_hotel-estimar-benicassim.jpg"));
+        listaHoteles.add(new clHotel("Gran Hotel Vista Montserrat", "Carretera Vista Montserrat 101", "+34 999 000 111", "www.hotelvistamontserrat.com", "4", "https://www.construcia.com/wp-content/uploads/2022/12/Portada-Hotel-Apolo-1.png"));
 
     }
     private void initSpinner(){

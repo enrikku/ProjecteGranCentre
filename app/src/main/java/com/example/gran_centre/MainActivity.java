@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Peliculas", Toast.LENGTH_SHORT).show();
 
         }else if (view.getId() == R.id.temperatura){
-            Toast.makeText(this, "Temperatura", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, ParkingActivity.class);
+            startActivity(intent);
 
         }else if (view.getId() == R.id.hotel){
             Intent intent = new Intent(this, HotelsActivity.class);

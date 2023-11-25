@@ -4,14 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".RestaurantesActivity">
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_column="1"
-        android:layout_row="9"
-        tools:context=".RestaurantesActivity">
+        android:layout_height="match_parent">
 
         <Spinner
             android:layout_width="match_parent"
@@ -36,11 +34,7 @@
                 android:layout_marginStart="5dp"/>
 
             <TableLayout
-                android:layout_column="1"
-                android:layout_row="1"
-                android:layout_marginStart="5dp"
-                android:gravity="center_vertical">
-
+                android:layout_marginStart="5dp">
                 <TableRow>
                     <TextView
                         android:layout_width="wrap_content"
@@ -114,11 +108,7 @@
                 android:layout_marginStart="5dp"/>
 
             <TableLayout
-                android:layout_column="1"
-                android:layout_row="1"
-                android:layout_marginStart="5dp"
-                android:gravity="center_vertical">
-
+                android:layout_marginStart="5dp">
                 <TableRow>
                     <TextView
                         android:layout_width="wrap_content"
@@ -192,10 +182,7 @@
                 android:layout_marginStart="5dp"/>
 
             <TableLayout
-                android:layout_column="1"
-                android:layout_row="1"
-                android:layout_marginStart="5dp"
-                android:gravity="center_vertical">
+                android:layout_marginStart="5dp">
 
                 <TableRow>
                     <TextView
@@ -270,10 +257,7 @@
                 android:layout_marginStart="5dp"/>
 
             <TableLayout
-                android:layout_column="1"
-                android:layout_row="1"
-                android:layout_marginStart="5dp"
-                android:gravity="center_vertical">
+                android:layout_marginStart="5dp">
 
                 <TableRow>
                     <TextView
@@ -348,10 +332,7 @@
                 android:layout_marginStart="5dp"/>
 
             <TableLayout
-                android:layout_column="1"
-                android:layout_row="1"
-                android:layout_marginStart="5dp"
-                android:gravity="center_vertical">
+                android:layout_marginStart="5dp">
 
                 <TableRow>
                     <TextView
@@ -410,5 +391,6 @@
                     android:src="@drawable/maps"/>
             </LinearLayout>
         </GridLayout>
+
     </GridLayout>
 </ScrollView>

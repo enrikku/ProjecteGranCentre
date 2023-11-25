@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(this, RestaurantesActivity.class);
             startActivity(intent);
         }else if (view.getId() == R.id.peliculas){
-            Toast.makeText(this, "Peliculas", Toast.LENGTH_SHORT).show();
-
+            Intent intent = new Intent(this, PeliculasActivity.class);
+            startActivity(intent);
         }else if (view.getId() == R.id.temperatura){
             Toast.makeText(this, "Temperatura", Toast.LENGTH_SHORT).show();
 

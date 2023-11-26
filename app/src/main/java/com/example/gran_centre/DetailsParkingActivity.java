@@ -29,6 +29,7 @@ public class DetailsParkingActivity extends AppCompatActivity {
             int ocup = extras.getInt("ocup");
 
             // Actualizar los TextViews con la información
+
             ImageView photoParking = findViewById(R.id.imageViewParking);
             TextView nameTextView = findViewById(R.id.textViewName);
             TextView addressTextView = findViewById(R.id.textViewAddress);

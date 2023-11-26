@@ -44,7 +44,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/sol"
+            android:src="@drawable/parking"
             android:id="@+id/temperatura" />
     </TableRow>
     <TableRow

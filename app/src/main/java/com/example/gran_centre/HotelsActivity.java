@@ -65,6 +65,7 @@ public class HotelsActivity extends AppCompatActivity
                 }else{
                     listaHoteles.clear();
                     addHotels();
+                    hotelAdapter.notifyDataSetChanged();
                 }
 
             }

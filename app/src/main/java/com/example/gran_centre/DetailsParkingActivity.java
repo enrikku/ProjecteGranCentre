@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
+
 public class DetailsParkingActivity extends AppCompatActivity {
 
     @Override
@@ -19,6 +21,7 @@ public class DetailsParkingActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
+            String urlPhoto = extras.getString("photo");
             String nombre = extras.getString("nombre");
             String direccion = extras.getString("direccion");
             String tel = extras.getString("tel");
@@ -26,6 +29,7 @@ public class DetailsParkingActivity extends AppCompatActivity {
             int ocup = extras.getInt("ocup");
 
             // Actualizar los TextViews con la información
+            ImageView photoParking = findViewById(R.id.imageViewParking);
             TextView nameTextView = findViewById(R.id.textViewName);
             TextView addressTextView = findViewById(R.id.textViewAddress);
             TextView telTextView = findViewById(R.id.textViewTel);
@@ -33,6 +37,7 @@ public class DetailsParkingActivity extends AppCompatActivity {
             TextView ocupTextView = findViewById(R.id.textViewOcup);
             ImageView arrowBack = findViewById(R.id.backArrow);
 
+            Glide.with(this).load(urlPhoto).into(photoParking);
             nameTextView.setText(nombre);
             addressTextView.setText(direccion);
             telTextView.setText(tel);

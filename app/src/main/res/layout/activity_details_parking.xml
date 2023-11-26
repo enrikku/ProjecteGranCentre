@@ -8,13 +8,16 @@
         android:id="@+id/backArrow"
         android:src="@drawable/ic_arrow_foreground"
         android:layout_width="50dp"
-        android:layout_height="50dp"/>
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        />
     <ImageView
         android:id="@+id/imageViewParking"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_car_foreground" />
+        android:src="@drawable/ic_car_foreground"
+        android:layout_below="@id/backArrow"/>
 
     <LinearLayout
         android:layout_width="match_parent"

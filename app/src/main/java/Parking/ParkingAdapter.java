@@ -58,6 +58,7 @@ public class ParkingAdapter extends RecyclerView.Adapter<ParkingAdapter.ViewHold
                 intent.putExtra("tel", parking.getTel());
                 intent.putExtra("disp", parking.getPlacesDisp());
                 intent.putExtra("ocup", parking.getPlacesOcupades());
+                intent.putExtra("photo", parking.getPhoto());
 
                 // Agrega otros detalles que desees pasar
                 context.startActivity(intent);

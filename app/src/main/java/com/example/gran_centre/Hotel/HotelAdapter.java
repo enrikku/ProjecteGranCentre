@@ -40,9 +40,9 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         clHotel hotel = hotels.get(position);
 
-
+        Uri imageUri = Uri.parse(hotel.getPhoto());
         Glide.with(context)
-                .load(hotel.getPhoto())
+                .load("https://raulperez.tieneblog.net/wp-content/uploads/2015/09/tux-transparente.png")
                 .error(R.drawable.ic_error_foreground)  // Error drawable
                 .into(holder.imageViewCompany);
         holder.textViewCompanyName.setText(hotel.getNom());

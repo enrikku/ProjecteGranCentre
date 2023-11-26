@@ -16,10 +16,7 @@
         android:theme="@style/Theme.Grancentre"
         tools:targetApi="31">
         <activity
-            android:name=".DetailsParkingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ParkingActivity"
+            android:name=".PeliculasActivity"
             android:exported="false" />
         <activity
             android:name=".HotelsActivity"

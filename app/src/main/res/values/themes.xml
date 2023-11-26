@@ -7,6 +7,11 @@
 
     <style name="Theme.Grancentre" parent="Base.Theme.Grancentre" />
 
+    <style name="title" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
     <style name="StyleSpinner">
         <item name="android:minHeight">50dp</item>
         <item name="android:background">@android:color/holo_blue_dark</item>
@@ -19,5 +24,21 @@
         <item name="android:scaleY">0.5</item>
         <item name="android:transformPivotX">0dp</item>
         <item name="android:transformPivotY">25dp</item>
+    </style>
+
+    <style name="toolBar">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@android:color/holo_blue_dark</item>
+    </style>
+
+    <style name="textOptonsFilms">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="imgSizeFilms">
+        <item name="android:layout_width">155dp</item>
+        <item name="android:layout_height">220dp</item>
+        <item name="android:layout_marginStart">5dp</item>
     </style>
 </resources>

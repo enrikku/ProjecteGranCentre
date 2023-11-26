@@ -45,11 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(this, RestaurantesActivity.class);
             startActivity(intent);
         }else if (view.getId() == R.id.peliculas){
-            Toast.makeText(this, "Peliculas", Toast.LENGTH_SHORT).show();
-
-        }else if (view.getId() == R.id.temperatura){
-            Intent intent = new Intent(this, ParkingActivity.class);
+            Intent intent = new Intent(this, PeliculasActivity.class);
             startActivity(intent);
+        }else if (view.getId() == R.id.temperatura){
+            Toast.makeText(this, "Temperatura", Toast.LENGTH_SHORT).show();
 
         }else if (view.getId() == R.id.hotel){
             Intent intent = new Intent(this, HotelsActivity.class);

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PeliculasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            style="@style/toolBar"/>
+
+        <!-- Pelicula 1: -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="1">
+                <ImageView
+                    android:layout_column="0"
+                    style="@style/imgSizeFilms"
+                    android:id="@+id/film1"/>
+                <TableLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_column="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FIVE NIGHTS AT FREDDY'S"
+                            style="@style/title"
+                            android:textAlignment="center"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Una película de terror basada en el popular videojuego."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Horario de cine:\nLunes a Viernes - 18:00, 20:30\nSábados y Domingos - 15:00, 17:30, 20:00" />
+                    </TableRow>
+                </TableLayout>
+            </GridLayout>
+        </LinearLayout>
+
+        <!-- Pelicula 2: -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="1">
+                <ImageView
+                    android:layout_column="0"
+                    style="@style/imgSizeFilms"
+                    android:id="@+id/film2"/>
+                <TableLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_column="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BLACK FRIDAY"
+                            style="@style/title"
+                            android:textAlignment="center"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Una película de terror que tiene lugar después del frenesí del Black Friday."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Horario de cine:\nJueves a Domingo - 17:30, 20:00\nLunes - Cerrado" />
+                    </TableRow>
+                </TableLayout>
+            </GridLayout>
+        </LinearLayout>
+
+        <!-- Pelicula 3:-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="1">
+                <ImageView
+                    android:layout_column="0"
+                    style="@style/imgSizeFilms"
+                    android:id="@+id/film3"/>
+                <TableLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_column="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NAPOLEON"
+                            style="@style/title"
+                            android:textAlignment="center"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Una película histórica que narra la vida de Napoleón Bonaparte."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Horario de cine:\nMartes a Domingo - 16:00, 19:00\nLunes - Cerrado" />
+                    </TableRow>
+                </TableLayout>
+            </GridLayout>
+        </LinearLayout>
+
+        <!-- Pelicula 4: The Marvels -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="1">
+                <ImageView
+                    android:layout_column="0"
+                    style="@style/imgSizeFilms"
+                    android:id="@+id/film4"/>
+                <TableLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_column="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="THE MARVELS"
+                            style="@style/title"
+                            android:textAlignment="center"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="La nueva entrega del universo cinematográfico de Marvel."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Horario de cine:\nViernes y Sábado - 19:30, 22:00\nDomingo - 15:30, 18:00" />
+                    </TableRow>
+                </TableLayout>
+            </GridLayout>
+        </LinearLayout>
+
+        <!-- Pelicula 5:-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="1">
+                <ImageView
+                    android:layout_column="0"
+                    style="@style/imgSizeFilms"
+                    android:id="@+id/film5"/>
+                <TableLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_column="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOS ASESINOS DE LA LUNA"
+                            style="@style/title"
+                            android:textAlignment="center"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Un thriller que narra los asesinatos en serie de varios miembros de la nación indígena Osage, rica en petróleo."/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textOptonsFilms"
+                            android:text="Horario de cine:\nMiércoles a Domingo - 20:00, 22:30\nLunes y Martes - Cerrado" />
+                    </TableRow>
+                </TableLayout>
+            </GridLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -40,17 +40,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.edifici){
-            Intent intent = new Intent(this, edifici.class);
-            startActivity(intent);
+            Toast.makeText(this, "Edifici", Toast.LENGTH_SHORT).show();
         }else if (view.getId() == R.id.restaurant){
             Intent intent = new Intent(this, RestaurantesActivity.class);
             startActivity(intent);
         }else if (view.getId() == R.id.peliculas){
-            Intent intent = new Intent(this, PeliculasActivity.class);
-            startActivity(intent);
+            Toast.makeText(this, "Peliculas", Toast.LENGTH_SHORT).show();
+
         }else if (view.getId() == R.id.temperatura){
-            Intent intent = new Intent(this,ParkingActivity.class);
-            startActivity(intent);
+            Toast.makeText(this, "Temperatura", Toast.LENGTH_SHORT).show();
+
         }else if (view.getId() == R.id.hotel){
             Intent intent = new Intent(this, HotelsActivity.class);
             startActivity(intent);

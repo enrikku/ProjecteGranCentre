@@ -24,6 +24,9 @@
             android:name=".PeliculasActivity"
             android:exported="false" />
         <activity
+            android:name=".events"
+            android:exported="false" />
+        <activity
             android:name=".HotelsActivity"
             android:exported="false" />
         <activity

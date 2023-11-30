@@ -39,10 +39,10 @@ public class events extends AppCompatActivity {
 
     public void addEventos()
     {
-        listaEventos.add(new clEventos("Concierto Buhos", "Madrid", "Concierto"));
-        listaEventos.add(new clEventos("Painball", "Barcelona", "Entretenimiento"));
-        listaEventos.add(new clEventos("Cine a la fresca", "Barcelona", "Entretenimiento"));
-        listaEventos.add(new clEventos("Cena con vecinos", "Barcelona", "Cena"));
+        listaEventos.add(new clEventos("Concierto Buhos", "Madrid", "Concierto", "https://media.timeout.com/images/106059079/image.jpg"));
+        listaEventos.add(new clEventos("Painball", "Barcelona", "Entretenimiento", "https://png.pngtree.com/png-vector/20201224/ourmid/pngtree-culture-and-entertainment-internet-live-broadcast-promotion-business-marketing-2-5d-png-image_2620020.jpg"));
+        listaEventos.add(new clEventos("Cine a la fresca", "Barcelona", "Entretenimiento", "https://png.pngtree.com/png-vector/20201224/ourmid/pngtree-culture-and-entertainment-internet-live-broadcast-promotion-business-marketing-2-5d-png-image_2620020.jpg"));
+        listaEventos.add(new clEventos("Cena con vecinos", "Barcelona", "Cena", "https://upload.wikimedia.org/wikipedia/commons/1/1d/Cena_Navide%C3%B1a.JPG"));
     }
 
     private void initRecyclerView()

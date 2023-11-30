@@ -6,10 +6,13 @@ public class clEventos {
     private  String ciudad;
     private String categoria;
 
-    public clEventos(String nombre, String ciudad, String categoria){
+    private String img;
+
+    public clEventos(String nombre, String ciudad, String categoria, String img){
         this.nom = nombre;
         this.ciudad = ciudad;
         this.categoria = categoria;
+        this.img = img;
     }
 
     public String getNom(){
@@ -22,5 +25,9 @@ public class clEventos {
 
     public String getCategoria(){
         return this.categoria;
+    }
+
+    public String getImg(){
+        return this.img;
     }
 }

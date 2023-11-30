@@ -22,8 +22,18 @@ public class events extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
+        // En tu actividad o fragmento
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+
+        // Crea e instancia tu adaptador
+        EventoAdapter eventoAdapter = new EventoAdapter(this, listaEventos);
+
+        // Configura el RecyclerView con el adaptador
+        recyclerView.setAdapter(eventoAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         addEventos();
+
         initRecyclerView();
     }
 

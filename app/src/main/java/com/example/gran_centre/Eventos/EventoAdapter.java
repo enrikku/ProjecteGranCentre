@@ -25,26 +25,28 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.ViewHolder
     @NonNull
     @Override
     public EventoAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.activity_events, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.evento_card_view, parent, false);
         return new EventoAdapter.ViewHolder(view);
     }
+
+
 
     @Override
     public void onBindViewHolder(@NonNull EventoAdapter.ViewHolder holder, int position) {
         clEventos evento = eventos.get(position);
 
         // Set data to views
-        if (holder.textViewEventoNombre != null) {
+
             holder.textViewEventoNombre.setText(evento.getNom());
-        }
 
-        if (holder.textViewEventoCiudad != null) {
+
+
             holder.textViewEventoCiudad.setText(evento.getCiudad());
-        }
 
-        if (holder.textViewEventoCategoria != null) {
+
+
             holder.textViewEventoCategoria.setText(evento.getCategoria());
-        }
+
     }
 
 
